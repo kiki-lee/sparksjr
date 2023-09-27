@@ -56,7 +56,7 @@ namespace sparksjr {
     * @param handler
     */
     //% weight=99 blockGap=8
-    //% blockId=ctrlonB block="on `ICON.b-button-color`"
+    //% blockId=ctrlonB block="on `ICON.b-button-white`"
     //% group="Controller"
     //% color=#512e0e
     //% help=docs/on-b
