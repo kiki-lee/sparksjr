@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.41/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.4","target":"arcade","targetVersion":"1.12.41","repo":"kiki-lee/sparksjr"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.41/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.5","target":"arcade","targetVersion":"1.12.41","repo":"kiki-lee/sparksjr"}
 // total=1283692 new=5.72% cached=88.40% other=5.87%
 (function (ectx) {
 'use strict';
@@ -436,7 +436,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P49658(s) {
+function _main___P49817(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -848,18 +848,18 @@ switch (step) {
     s.callLocIdx = 64; s.pc = 38; return s.tmp_0;
   case 38:
     r0 = s.retval;
-    globals.scoreText___30257 = (r0);
+    globals.scoreText___49702 = (r0);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-_main___P49658.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P49658.continuations = [  ]
+_main___P49817.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P49817.continuations = [  ]
 
-function _main___P49658_mk(s) {
+function _main___P49817_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P49658, depth: s.depth + 1,
+        parent: s, fn: _main___P49817, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -43516,7 +43516,7 @@ const sprites_BaseSpriteSayRenderer__C28140_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["scoreText___30257"])
+const breakpoints = setupDebugger(1, ["scoreText___49702"])
 
-return _main___P49658
+return _main___P49817
 })
