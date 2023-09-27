@@ -6,7 +6,7 @@
         "device": "*",
         "arcade-text": "github:microsoft/arcade-text#v1.3.0",
         "stopwatch": "github:kiki-lee/stopwatch#v0.0.5",
-        "arcade-block-icons": "github:kiki-lee/arcade-block-icons#v0.0.5"
+        "arcade-block-icons": "github:kiki-lee/arcade-block-icons#v0.0.6"
     },
     "files": [
         "main.blocks",
