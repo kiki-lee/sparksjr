@@ -12,7 +12,7 @@ namespace sparksjr {
     * Adds kindling to the correct place
     */
     //% blockId=set_kindling_sprite
-    //% block="add $thisImg"
+    //% block="add `ICON.stick-pile`"
     //% thisImg.defl=sparks.pile1
     //% thisImg.shadow=screen_image_picker
     //% group="Sprite"
@@ -27,7 +27,7 @@ namespace sparksjr {
     * Special lose sequence
     */
     //% blockId=set_kindling_lose
-    //% block="game over 😖"
+    //% block="game over `ICON.frown-open-white`"
     //% group="Game"
     //% help=github:docs/set_kindling_lose
     export function fireLoss() {
@@ -40,7 +40,7 @@ namespace sparksjr {
     * Special win sequence
     */
     //% blockId=set_kindling_win
-    //% block="game over 😁"
+    //% block="game over `ICON.smile-beam-white`"
     //% group="Game"
     //% help=github:docs/set_kindling_win
     export function fireWin() {
@@ -56,7 +56,7 @@ namespace sparksjr {
     * @param handler
     */
     //% weight=99 blockGap=8
-    //% blockId=ctrlonB block="on Ⓑ"
+    //% blockId=ctrlonB block="on `ICON.b-button-color`"
     //% group="Controller"
     //% color=#512e0e
     //% help=docs/on-b
@@ -70,7 +70,7 @@ namespace sparksjr {
     * Overrides the normal score UI with an iconified version
     */
     //% blockId=set_score_override
-    //% block="set 🔥 to $thisScore"
+    //% block="set `ICON.fire` to $thisScore"
     //% thisScore.defl=0
     //% group="Score"
     //% help=github:docs/set_score_override
@@ -106,7 +106,7 @@ namespace sparksjr {
     * with an iconified version
     */
     //% blockId=change_fire_override
-    //% block="change 🔥 by $thisScore"
+    //% block="change `ICON.fire` by $thisScore"
     //% thisScore.defl=1
     //% group="Score"
     //% help=github:docs/change_fire_override
@@ -114,7 +114,7 @@ namespace sparksjr {
         info.changeScoreBy(thisScore)
         sparksjr.setScoreOverride(info.score())
         if (thisScore >= 0) {
-            firePit.startEffect(effects.fire, 100)
+            firePit.startEffect(effects.fire, 500)
         } else {
             firePit.startEffect(effects.blizzard, 100)
         }
@@ -129,7 +129,7 @@ namespace sparksjr {
      * @param handler code to run when the score reaches the given value
      */
     //% blockId=gameonscore2
-    //% block="on 🔥 $score"
+    //% block="on `ICON.fire` $score"
     //% score.defl=100
     //% help=docs/on_score
     //% color=#512e0e
