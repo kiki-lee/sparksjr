@@ -114,7 +114,7 @@ namespace sparksjr {
         info.changeScoreBy(thisScore)
         sparksjr.setScoreOverride(info.score())
         if (thisScore >= 0) {
-            firePit.startEffect(effects.fire, 100)
+            firePit.startEffect(effects.fire, 500)
         } else {
             firePit.startEffect(effects.blizzard, 100)
         }
