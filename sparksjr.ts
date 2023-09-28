@@ -178,3 +178,16 @@ namespace stopwatch {
         stopwatch.startTimer(stopwatch.TimerType.Tens)
     }
 }
+
+namespace scene {
+    /**
+     * Sets the background with fewer words
+     */
+    //% blockId=set_bg
+    //% block="set scene $thisBG"
+    //% thisBG.shadow=background_image_picker
+    //% help=docs/set_bg
+    export function setBG(thisBG:Image) {
+        scene.setBackgroundImage(thisBG)
+    }
+}
