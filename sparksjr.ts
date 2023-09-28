@@ -3,6 +3,7 @@
 //% icon="\uf06d"
 //% blockGap=8 block="Sparks"
 //% groups='["Sprite", "Game", "Controller", "Score"]'
+//% weight=99
 namespace sparksjr {
 
     export let firePit: Sprite = null
@@ -167,41 +168,32 @@ namespace sparksjr {
 
 }
 
+
+//% weight=99
 namespace stopwatch {
+
+
     /**
      * Starts stopwatch for kids pointbased games in tenths
      */
     //% blockId=stopwatch_jr
     //% block="start `ICON.stopwatch-0-white`"
+    // weight=100
     //% help=docs/stopwatch_jr
     export function stopJr() {
         stopwatch.startTimer(stopwatch.TimerType.Tens)
     }
-}
 
-namespace scene {
-    /**
-     * Sets the background with fewer words
-     */
-    //% blockId=set_bg
-    //% block="set scene $thisBG"
-    //% thisBG.shadow=sparks_bg_image_picker
-    //% help=docs/set_bg
-    export function setBG(thisBG:Image) {
-        scene.setBackgroundImage(thisBG)
-    }
-}
-
-namespace game {
     /**
      * Run code on an interval of time. This executes before game.onUpdate()
      * @param body code to execute
      */
-    //% group="Gameplay"
+    //% group="Timer"
     //% help=game/on-update-interval weight=99 afterOnStart=true
     //% blockId=gameinterval3 block="every $period second(s)"
     //% period.defl=1
     //% blockAllowMultiple=1
+    //% weight=99
     export function onUpdateInterval3(period: number, a: () => void): void {
         period = period * 1000;
         if (!a || period < 0) return;
@@ -214,7 +206,28 @@ namespace game {
             }
         });
     }
+
+
+
+
+
 }
+
+
+//% weight=200
+namespace scene {
+    /**
+     * Sets the background with fewer words
+     */
+    //% blockId=set_bg
+    //% block="set scene $thisBG"
+    //% thisBG.shadow=sparks_bg_image_picker
+    //% help=docs/set_bg
+    export function setBG(thisBG: Image) {
+        scene.setBackgroundImage(thisBG)
+    }
+}
+
 
 namespace images {
 
