@@ -185,7 +185,7 @@ namespace scene {
      */
     //% blockId=set_bg
     //% block="set scene $thisBG"
-    //% thisBG.shadow=background_image_picker
+    //% thisBG.shadow=sparks_bg_image_picker
     //% help=docs/set_bg
     export function setBG(thisBG:Image) {
         scene.setBackgroundImage(thisBG)
@@ -214,4 +214,22 @@ namespace game {
             }
         });
     }
+}
+
+namespace images {
+
+    //% blockId=sparks_bg_image_picker block="%img"
+    //% shim=TD_ID
+    //% img.fieldEditor="sprite"
+    //% img.fieldOptions.taggedTemplate="img"
+    //% img.fieldOptions.decompileIndirectFixedInstances="true"
+    //% img.fieldOptions.decompileArgumentAsString="true"
+    //% img.fieldOptions.sizes="-1,-1"
+    //% img.fieldOptions.filter="sparksbg"
+    //% weight=100 group="Create"
+    //% blockHidden=1 duplicateShadowOnDrag
+    export function _screenImageSparksBG(img: Image) {
+        return img
+    }
+
 }
