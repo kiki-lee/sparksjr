@@ -191,3 +191,27 @@ namespace scene {
         scene.setBackgroundImage(thisBG)
     }
 }
+
+namespace game {
+    /**
+     * Run code on an interval of time. This executes before game.onUpdate()
+     * @param body code to execute
+     */
+    //% group="Gameplay"
+    //% help=game/on-update-interval weight=99 afterOnStart=true
+    //% blockId=gameinterval3 block="every $period second(s)"
+    //% period.defl=1
+    //% blockAllowMultiple=1
+    export function onUpdateInterval3(period: number, a: () => void): void {
+        period = period * 1000;
+        if (!a || period < 0) return;
+        let timer = 0;
+        game.eventContext().registerFrameHandler(scene.UPDATE_INTERVAL_PRIORITY, () => {
+            const time = game.currentScene().millis();
+            if (timer <= time) {
+                timer = time + period;
+                a();
+            }
+        });
+    }
+}
