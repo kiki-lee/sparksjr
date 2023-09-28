@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.41/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.7","target":"arcade","targetVersion":"1.12.41","repo":"kiki-lee/sparksjr"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.41/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.8","target":"arcade","targetVersion":"1.12.41","repo":"kiki-lee/sparksjr"}
 // total=1291261 new=5.72% cached=88.41% other=5.87%
 (function (ectx) {
 'use strict';
@@ -436,7 +436,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P194643(s) {
+function _main___P199224(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -848,18 +848,18 @@ switch (step) {
     s.callLocIdx = 64; s.pc = 38; return s.tmp_0;
   case 38:
     r0 = s.retval;
-    globals.scoreText___194525 = (r0);
+    globals.scoreText___199102 = (r0);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-_main___P194643.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P194643.continuations = [  ]
+_main___P199224.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P199224.continuations = [  ]
 
-function _main___P194643_mk(s) {
+function _main___P199224_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P194643, depth: s.depth + 1,
+        parent: s, fn: _main___P199224, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -43516,7 +43516,7 @@ const sprites_BaseSpriteSayRenderer__C168773_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["scoreText___194525"])
+const breakpoints = setupDebugger(1, ["scoreText___199102"])
 
-return _main___P194643
+return _main___P199224
 })
