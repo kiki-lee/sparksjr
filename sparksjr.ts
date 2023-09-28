@@ -158,13 +158,33 @@ namespace sparksjr {
      */
     //% blockId=gameonscore2
     //% block="on `ICON.fire` $score"
-    //% score.defl=100
+    //% score.defl=30
     //% help=docs/on_score
     //% color=#512e0e
     //% group="Score"
     export function onScore(score: number, handler: () => void) {
         info.player1.impl.onScore(score, handler);
     }
+
+
+
+    /**
+     * Exactly the same as onScore, but different for toolbox purposes
+     *
+     * @param score the score to fire the event on
+     * @param handler code to run when the score reaches the given value
+     */
+    //% blockId=gameonscore2a
+    //% block="on `ICON.fire` $score"
+    //% score.defl=-5
+    //% help=docs/on_score
+    //% color=#512e0e
+    //% group="Score"
+    export function onScore2(score: number, handler: () => void) {
+        info.player1.impl.onScore(score, handler);
+    }
+
+
 
 }
 
